@@ -22,9 +22,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # 로컬 개발 환경(Node 24 / npm 11)과 맞춘다.
+      # Node 20(npm 10)에서는 npm 11로 만든 package-lock.json을 읽지 못해 npm ci가 실패한다.
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
 
       - name: 의존성 설치
