@@ -47,10 +47,9 @@ jobs:
       - name: .nojekyll 추가
         run: touch dist/.nojekyll
 
-      # enablement: Pages가 꺼져 있으면 워크플로가 알아서 켠다(설정에서 수동으로 켤 필요 없음)
+      # Pages는 저장소 Settings → Pages → Source를 "GitHub Actions"로
+      # 한 번 켜두어야 한다(워크플로 토큰에는 Pages를 생성할 권한이 없음).
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
