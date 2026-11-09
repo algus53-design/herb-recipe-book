@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "허브 레시피북",
+    "slug": "herb-recipe-book",
+    "scheme": "herb-recipe-book",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F3E7CC"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar"
+    ],
+    "experiments": {
+      "baseUrl": "/herb-recipe-book"
+    }
+  }
+}
